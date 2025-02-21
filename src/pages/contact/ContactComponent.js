@@ -7,8 +7,8 @@ import BlogsImg from "./BlogsImg";
 import AddressImg from "./AddressImg";
 import { Fade } from "react-reveal";
 import "./ContactComponent.css";
-import { greeting, contactPageData } from "../../portfolio.js";
-
+import { contactPageData } from "../../portfolio.js";
+import Resume from "../../assets/documents/resume.pdf";
 const ContactData = contactPageData.contactSection;
 const blogSection = contactPageData.blogSection;
 const addressSection = contactPageData.addressSection;
@@ -25,14 +25,15 @@ class Contact extends Component {
             <div className="contact-heading-div">
               <div className="contact-heading-img-div">
                 <img
-                  src={require(`../../assets/images/${ContactData["profile_image_path"]}`)}
+                  style={{ maxWidth: "75%", borderRadius: "50%" }}
+                  src={require(`../../assets/images/headshot.png`)}
                   alt=""
                 />
               </div>
               <div className="contact-heading-text-div">
                 <h1
                   className="contact-heading-text"
-                  style={{ color: theme.text }}
+                  style={{ color: theme.text, marginTop: "20px" }}
                 >
                   {ContactData["title"]}
                 </h1>
@@ -47,7 +48,7 @@ class Contact extends Component {
                   <Button
                     text="See My Resume"
                     newTab={true}
-                    href={greeting.resumeLink}
+                    href={Resume}
                     theme={theme}
                   />
                 </div>

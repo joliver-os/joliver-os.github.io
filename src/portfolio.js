@@ -51,7 +51,7 @@ const socialMediaLinks = [
   // },
   {
     name: "Gmail",
-    link: "mailto:joliveros@ryerson.ca",
+    link: "mailto:josh@oliveros.me",
     fontAwesomeIcon: "fa-google", // Reference https://fontawesome.com/icons/google?style=brands
     backgroundColor: "#D14836", // Reference https://simpleicons.org/?q=gmail
   },
@@ -67,12 +67,12 @@ const socialMediaLinks = [
   //   fontAwesomeIcon: "fa-facebook-f", // Reference https://fontawesome.com/icons/facebook-f?style=brands
   //   backgroundColor: "#1877F2", // Reference https://simpleicons.org/?q=facebook
   // },
-  // {
-  //   name: "Instagram",
-  //   link: "https://www.instagram.com/josh.oliveros/",
-  //   fontAwesomeIcon: "fa-instagram", // Reference https://fontawesome.com/icons/instagram?style=brands
-  //   backgroundColor: "#E4405F", // Reference https://simpleicons.org/?q=instagram
-  // },
+  {
+    name: "Instagram",
+    link: "https://www.instagram.com/theasianhoood/",
+    fontAwesomeIcon: "fa-instagram", // Reference https://fontawesome.com/icons/instagram?style=brands
+    backgroundColor: "#E4405F", // Reference https://simpleicons.org/?q=instagram
+  },
 ];
 
 const skills = {
@@ -453,7 +453,7 @@ const certifications = {
 // Experience Page
 const experience = {
   title: "Experience",
-  subtitle: "Work, Internship and Volunteership",
+  subtitle: "Work, Production Experience, and Volunteership",
   description:
     "I have worked with many evolving startups as ML and DL Developer, Designer and Software Architect. I have also worked with some well established companies mostly as AI Developer. I love organising events and that is why I am also involved with many opensource communities as a representative.",
   header_image_path: "experience.svg",
@@ -463,14 +463,19 @@ const experience = {
       work: true,
       experiences: [
         {
-          title: "Machine Learning Engineer",
-          company: "TikTok Inc.",
-          company_url: "https://www.tiktok.com/en/",
-          logo_path: "tiktok_logo.png",
-          duration: "June 2023 - Present",
-          location: "San Jose, CA, USA",
+          title: "Junior Designer",
+          company: "Victory Social Club",
+          company_url: "https://victorysocialclub.com/",
+          logo_path: "victory_social_club_logo.png",
+          duration: "Feb 2024 - Apr 2024",
+          location: "Toronto, ON, Canada",
           description:
             "Improving ads ranking models on the core TikTok product. Experience working on modeling two-tower architectures like DeepFM, Wide & deep learning, etc. Working on Large Language Models (LLM) pretraining and Large Multi-modal Model (LMM) finetuning strategies.",
+          bullet_points: [
+            "Designed and implemented a new feature for the Victory Social Club website that allows users to view and manage their social media accounts.",
+            "Developed a new API endpoint for the Victory Social Club website that allows users to view and manage their social media accounts.",
+            "Designed and implemented a new feature for the Victory Social Club website that allows users to view and manage their social media accounts.",
+          ],
           color: "#000000",
         },
         {

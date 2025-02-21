@@ -4,6 +4,7 @@ import { Fade } from "react-reveal";
 import { NavLink, Link } from "react-router-dom";
 import { greeting, settings } from "../../portfolio.js";
 import SeoHeader from "../seoHeader/SeoHeader";
+import Resume from "../../assets/documents/resume.pdf";
 
 const onMouseEnter = (event, color) => {
   const el = event.target;
@@ -94,6 +95,20 @@ class Header extends Component {
                   onMouseOut={(event) => onMouseOut(event)}
                 >
                   Contact Me
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to={Resume}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  tag={Link}
+                  activeStyle={{ fontWeight: "bold" }}
+                  style={{ color: theme.text }}
+                  onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
+                  onMouseOut={(event) => onMouseOut(event)}
+                >
+                  Resume
                 </NavLink>
               </li>
             </ul>

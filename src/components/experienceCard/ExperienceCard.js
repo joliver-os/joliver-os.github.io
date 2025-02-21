@@ -6,7 +6,6 @@ class ExperienceCard extends Component {
   render() {
     const experience = this.props.experience;
     const index = this.props.index;
-    const totalCards = this.props.totalCards;
     const theme = this.props.theme;
     return (
       <div
@@ -29,20 +28,8 @@ class ExperienceCard extends Component {
               height: 20,
               backgroundColor: `${theme.headerColor}`,
               borderRadius: 50,
-              zIndex: 100,
             }}
           />
-          {index !== totalCards - 1 && (
-            <div
-              style={{
-                height: 190,
-                width: 2,
-                backgroundColor: `${theme.headerColor}`,
-                position: "absolute",
-                marginTop: 20,
-              }}
-            />
-          )}
         </div>
         <Fade right duration={2000} distance="40px">
           <div style={{ display: "flex", flexDirection: "row" }}>
@@ -102,11 +89,22 @@ class ExperienceCard extends Component {
                 style={{
                   display: "flex",
                   justifyContent: "flex-start",
-                  marginTop: 20,
+                  marginTop: 10,
+                  paddingRight: 15,
                 }}
               >
-                <div className="repo-description" />
-                {experience["description"]}
+                <div>
+                  <div className="experience-card-description">
+                    {experience["description"]}
+                  </div>
+                  {experience["bullet_points"] && (
+                    <ul>
+                      {experience["bullet_points"].map((point, index) => (
+                        <li key={index}>{point}</li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
               </div>
             </div>
           </div>
