@@ -3,7 +3,6 @@ import "./Greeting.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import { greeting } from "../../portfolio";
 import { Fade } from "react-reveal";
-import FeelingProud from "./FeelingProud";
 
 export default function Greeting(props) {
   const theme = props.theme;
@@ -40,7 +39,16 @@ export default function Greeting(props) {
             </div>
           </div>
           <div className="greeting-image-div">
-            <FeelingProud theme={theme} />
+            {/* <FeelingProud theme={theme} /> */}
+            <iframe
+              title="vimeo-player"
+              src="https://player.vimeo.com/video/1048197428?autoplay=1&muted=1"
+              width="700"
+              height="400"
+              frameborder="0"
+              allowfullscreen
+              allow="autoplay"
+            ></iframe>
           </div>
         </div>
       </div>
