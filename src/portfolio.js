@@ -9,7 +9,7 @@ const settings = {
 const seo = {
   title: "Josh's Portfolio",
   description:
-    "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
+    "I’m always itching to create, whether that be in the form of graphic design, motion graphics, video editing, or producing short films!",
   og: {
     title: "Josh Oliveros Portfolio",
     type: "website",
@@ -21,9 +21,9 @@ const seo = {
 const greeting = {
   title: "Josh Oliveros",
   logo_name: "JoshOliveros",
-  nickname: "joliver-os",
+  nickname: "Design, Video, and Editing",
   subTitle:
-    "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
+    "Welcome to my portfolio :). I’m always itching to create, whether that be in the form of graphic design, motion graphics, video editing, or producing short films!",
   resumeLink:
     "https://drive.google.com/file/d/1bXRknv_h-XI_3CQ3SGPteGODtvEb7YvI/view?usp=sharing",
   portfolio_repository: "https://github.com/joliver-os/masterPortfolio",
@@ -31,12 +31,12 @@ const greeting = {
 };
 
 const socialMediaLinks = [
-  {
-    name: "Github",
-    link: "https://github.com/joliver-os",
-    fontAwesomeIcon: "fa-github", // Reference https://fontawesome.com/icons/github?style=brands
-    backgroundColor: "#181717", // Reference https://simpleicons.org/?q=github
-  },
+  // {
+  //   name: "Github",
+  //   link: "https://github.com/joliver-os",
+  //   fontAwesomeIcon: "fa-github", // Reference https://fontawesome.com/icons/github?style=brands
+  //   backgroundColor: "#181717", // Reference https://simpleicons.org/?q=github
+  // },
   {
     name: "LinkedIn",
     link: "https://www.linkedin.com/in/joshua-oliveros-ab65bb213/",
