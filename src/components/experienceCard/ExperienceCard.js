@@ -97,13 +97,15 @@ class ExperienceCard extends Component {
                   <div className="experience-card-description">
                     {experience["description"]}
                   </div>
-                  {experience["bullet_points"] && (
-                    <ul>
-                      {experience["bullet_points"].map((point, index) => (
-                        <li key={index}>{point}</li>
-                      ))}
-                    </ul>
-                  )}
+                  <div className="experience-card-bullet-points">
+                    {experience["bullet_points"] && (
+                      <ul>
+                        {experience["bullet_points"].map((point, index) => (
+                          <li key={index}>{point}</li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>

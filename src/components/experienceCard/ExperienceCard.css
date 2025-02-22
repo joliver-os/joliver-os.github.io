@@ -59,7 +59,7 @@
   margin-bottom: 10px;
 }
 
-.experience-card-bullet-points li {
+.experience-card-bullet-points ul li {
   margin-bottom: 10px;
 }
 
@@ -343,6 +343,6 @@
   .experience-card-description {
     margin-left: 14px;
     margin-right: 14px;
-    text-align: justify;
+    text-align: center;
   }
 }
